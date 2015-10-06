@@ -1,0 +1,14 @@
+{% extends "unified_base.html" %}
+
+{% load staticfiles %}
+{% block local_includes %}
+	<link rel="stylesheet" type="text/css" href='{% static "css/secure/secure_theme.css" %}'/>
+	<script type="text/javascript" src="{% static 'js/secure/common.js' %}"></script>
+	{% block module_includes %}
+	{% endblock %}
+{% endblock %}
+
+{% block subnav %}
+	{% block module_nav %}
+	{% endblock %}
+{% endblock %}

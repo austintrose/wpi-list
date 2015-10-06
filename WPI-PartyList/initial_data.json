@@ -1,0 +1,163 @@
+[
+{
+  "fields": {
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": true,
+    "is_staff": true,
+    "last_login": "2015-10-06T01:19:32.729",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$15000$CiFQt5gTK8iR$bwdf790abANP4T3vDtMAwEmzPRvrirO/881jxdU3Fqg=",
+    "email": "atrose@wpi.edu",
+    "date_joined": "2015-10-06T01:10:42.803"
+  },
+  "model": "auth.user",
+  "pk": 2
+},
+{
+  "fields": {
+    "username": "sigmapi_manager",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": false,
+    "last_login": "2015-10-06T01:21:40.275",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$15000$gznmQz1uXwMu$R9yDDGQXamxJlZacWVwJriaUHGFSExyNO/lS9Vfaptc=",
+    "email": "",
+    "date_joined": "2015-10-06T01:12:30"
+  },
+  "model": "auth.user",
+  "pk": 3
+},
+{
+  "fields": {
+    "username": "sigmapi_user",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": false,
+    "last_login": "2015-10-06T01:19:42.907",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$15000$w8sbG1lsgLbY$s1YaH87jBhPWOzfVgnY1WxiDM29Ob3wstMm7rf5bpEk=",
+    "email": "",
+    "date_joined": "2015-10-06T01:14:14.773"
+  },
+  "model": "auth.user",
+  "pk": 4
+},
+{
+  "fields": {
+    "username": "psk_manager",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": false,
+    "last_login": "2015-10-06T01:14:51",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$15000$OoMdPeyXul2E$5jNxaLvJrRfaxPTE3Ufp3sc5S6b+UxV/qIGTLAI4sc8=",
+    "email": "",
+    "date_joined": "2015-10-06T01:14:51"
+  },
+  "model": "auth.user",
+  "pk": 5
+},
+{
+  "fields": {
+    "username": "psk_user",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": false,
+    "last_login": "2015-10-06T01:14:59.483",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$15000$DQXk47Yjfwit$q9iMQqo+cXlMNGnitNUsCEWSawhkPfu2BAolMeLOdHY=",
+    "email": "",
+    "date_joined": "2015-10-06T01:14:59.483"
+  },
+  "model": "auth.user",
+  "pk": 6
+},
+{
+  "fields": {
+    "manager": [
+      "sigmapi_manager"
+    ],
+    "name": "Sigma Pi"
+  },
+  "model": "UserInfo.fraternity",
+  "pk": 1
+},
+{
+  "fields": {
+    "manager": [
+      "psk_manager"
+    ],
+    "name": "PSK"
+  },
+  "model": "UserInfo.fraternity",
+  "pk": 2
+},
+{
+  "fields": {
+    "user": [
+      "psk_manager"
+    ],
+    "fraternity": 2
+  },
+  "model": "UserInfo.userinfo",
+  "pk": 1
+},
+{
+  "fields": {
+    "user": [
+      "psk_user"
+    ],
+    "fraternity": 2
+  },
+  "model": "UserInfo.userinfo",
+  "pk": 2
+},
+{
+  "fields": {
+    "user": [
+      "sigmapi_manager"
+    ],
+    "fraternity": 1
+  },
+  "model": "UserInfo.userinfo",
+  "pk": 3
+},
+{
+  "fields": {
+    "user": [
+      "sigmapi_user"
+    ],
+    "fraternity": 1
+  },
+  "model": "UserInfo.userinfo",
+  "pk": 4
+},
+{
+  "fields": {
+    "date": "2015-10-07",
+    "fraternity": 1,
+    "girlcount": 0,
+    "name": "Banger",
+    "guycount": 0
+  },
+  "model": "PartyList.party",
+  "pk": 1
+}
+]

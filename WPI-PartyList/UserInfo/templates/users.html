@@ -1,0 +1,23 @@
+{% extends "unified_base.html" %}
+{% block title %}Sigma Pi Gamma Iota - Brothers{% endblock %}
+
+{% block local_includes %}
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href='{% static "css/brothers.css" %}'/>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Users</h2>
+    {% for u in users %}
+    {% if not u == user %}
+    <p>
+    {{ u }}
+    </p>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

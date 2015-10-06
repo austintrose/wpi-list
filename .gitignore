@@ -1,0 +1,9 @@
+*.pyc*
+*.DS_Store
+.vagrant/
+.idea/
+venv/
+database
+PartyList/database
+PartyList/content/*
+PartyList/static_dir/

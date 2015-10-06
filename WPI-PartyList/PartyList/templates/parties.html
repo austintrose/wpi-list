@@ -1,0 +1,25 @@
+{% extends "secure_base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+<div class="row">
+	<div class="col-md-10 col-md-offset-1">
+		<h3>{{user.fraternity}} Party List Tracker</h3>
+		{% if is_manager %}
+      Welcome, {{ user.fraternity }} manager.
+		{% else %}
+      Welcome, {{ user }}.
+		{% endif %}
+	</div>
+
+	<div class="col-md-10 col-md-offset-1">
+		{% for party in parties %}
+		<a href="{% url 'PartyList.views.guests' party.pk %}">
+			Guest List for {{p}}
+		</a>
+		{% endfor %}
+  </div>
+</div>
+
+{% endblock %}

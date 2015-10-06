@@ -1,0 +1,19 @@
+{
+  "name": "Django playground",
+  "description": "A simple Django project to showcase basic features",
+  "repository": "https://github.com/austintrose/wpi-list.git",
+  "keywords": ["django"],
+  "success_url": "/",
+  "scripts": {
+    "postdeploy": "python WPI-PartyList/manage.py migrate --noinput"
+  },
+  "env": {
+    "DJANGO_SECRET": {
+      "description": "A secret key for encrypting Django sessions",
+      "generator": "secret"
+    }
+  },
+  "addons": [
+    "sendgrid"
+  ]
+}
