@@ -101,6 +101,8 @@ STATICFILES_FINDERS = (
 # SECRET_KEY = 'bg#3p7$1l7i=^frmpvx!##nzsbt-eg$cy!(1-a#m9k(l0rksw7'
 SECRET_KEY = os.environ['DJANGO_SECRET']
 
+ALLOWED_HOSTS = []
+
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
