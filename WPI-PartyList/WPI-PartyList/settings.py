@@ -30,7 +30,7 @@ DATABASES = {
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-54-86-80-103.compute-1.amazonaws.com']
 
 SENDFILE_BACKEND = 'sendfile.backends.development'
 
@@ -100,8 +100,6 @@ STATICFILES_FINDERS = (
 # Make this unique, and don't share it with anybody.
 # SECRET_KEY = 'bg#3p7$1l7i=^frmpvx!##nzsbt-eg$cy!(1-a#m9k(l0rksw7'
 SECRET_KEY = os.environ['DJANGO_SECRET']
-
-ALLOWED_HOSTS = []
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
